@@ -1,6 +1,6 @@
-# 🦜🔗 LangChain & LangGraph Bootcamp
+# 🦜🔗 LangChain Bootcamp
 
-> Notes, exercises, and implementations from my self-study of LangChain and LangGraph — the leading frameworks for building production-grade LLM applications in Python.
+> Notes, exercises, and implementations from my self-study of LangChain — the leading framework for building production-grade LLM applications in Python.
 
 ---
 
@@ -86,7 +86,7 @@ source venv/bin/activate
 
 ### 3. Install Dependencies
 ```bash
-pip install -U langchain langchain-community langchain-openai langchain-chroma langgraph
+pip install -U langchain langchain-community langchain-openai langchain-chroma
 pip install chromadb tiktoken openai sentence-transformers
 pip install jupyter
 ```
@@ -135,9 +135,9 @@ Part II →  RAG Pipeline, Vector Stores, Document Loaders, Chains
 Part III → Function Calling, Conversation Memory, Agents & Tools
 ```
 
-These notebooks are from my bootcamp study of the LangChain and LangGraph ecosystem, completed alongside the **Persistent Systems Mentorship Programme**.
+These notebooks are from my bootcamp study of the LangChain ecosystem, completed alongside the **Persistent Systems Mentorship Programme**.
 
-LangChain is the backbone of most production LLM applications, enabling chaining of prompts, models, tools, and memory. LangGraph extends it to build stateful, multi-actor agent systems.
+LangChain is the backbone of most production LLM applications, enabling chaining of prompts, models, tools, and memory into powerful AI pipelines.
 
 ---
 
