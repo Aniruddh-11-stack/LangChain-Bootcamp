@@ -9,8 +9,10 @@
 ```
 LangChain-LangGraph-Bootcamp/
 │
-├── LangChain_with_Python_Bootcamp_Part_II.ipynb   # Document loaders, RAG, vector stores
-├── .env.example                                    # API key template
+├── LangChain_with_Python_Bootcamp_Part_I.ipynb      # LLMs, Prompt Templates, Output Parsers
+├── LangChain_with_Python_Bootcamp_Part_II.ipynb     # Document Loaders, RAG, Chains, Vector Stores
+├── Langchain_with_Python_Bootcamp_Part_III.ipynb    # Function Calling, Memory, Agents & Tools
+├── .env.example                                      # API key template
 └── README.md
 ```
 
@@ -18,18 +20,50 @@ LangChain-LangGraph-Bootcamp/
 
 ## 📓 Notebooks
 
-### `LangChain_with_Python_Bootcamp_Part_II.ipynb`
+### `LangChain_with_Python_Bootcamp_Part_I.ipynb`
 
-A deep dive into data handling and Retrieval-Augmented Generation (RAG) with LangChain:
+Foundations of building LLM-powered applications with LangChain:
 
 | Topic | Description |
 |-------|-------------|
-| **Document Loaders** | Load data from CSV, text files, PDFs using `CSVLoader`, `TextLoader` |
+| **LLMs & Chat Models** | Interact with language models via `LLM` and `ChatModel` interfaces |
+| **Prompt Templates** | Structure dynamic prompts using `PromptTemplate` and `ChatPromptTemplate` |
+| **Few-Shot Prompting** | Guide model behaviour using `FewShotPromptTemplate` with curated examples |
+| **Output Parsers** | Parse and structure model responses using LangChain's output parser utilities |
+
+---
+
+### `LangChain_with_Python_Bootcamp_Part_II.ipynb`
+
+Deep dive into data handling, Retrieval-Augmented Generation (RAG), and LangChain chains:
+
+| Topic | Description |
+|-------|-------------|
+| **Document Loaders** | Load data from CSV, text files, and PDFs using `CSVLoader`, `TextLoader`, and integrations |
 | **Text Splitting** | Chunk large documents with `CharacterTextSplitter` (tiktoken-based) |
-| **Embeddings** | Generate semantic embeddings with `OpenAIEmbeddings` |
+| **Text Embeddings** | Generate semantic embeddings with `OpenAIEmbeddings` |
 | **ChromaDB Vector Store** | Store, persist, and reload embeddings for semantic search |
-| **Contextual Compression** | Retrieve the most relevant chunks using `ContextualCompressionRetriever` + `LLMChainExtractor` |
-| **OpenAI Function Calling** | Use OpenAI's function-calling API directly within LangChain chains |
+| **Legal Research Bot** | Build a Q&A bot on the US Constitution using RAG |
+| **LLMChain** | Combine prompt templates and models into reusable chains |
+| **Sequential Chains** | Build multi-step pipelines with `SimpleSequentialChain` and `SequentialChain` |
+| **Transform Chain** | Preprocess inputs with custom transformation logic before passing to a model |
+
+---
+
+### `Langchain_with_Python_Bootcamp_Part_III.ipynb`
+
+Advanced LangChain: agents, tool use, and conversation memory:
+
+| Topic | Description |
+|-------|-------------|
+| **OpenAI Function Calling** | Use OpenAI's function-calling API within LangChain chains without Pydantic |
+| **MathChain** | Solve mathematical problems using LangChain's `LLMMathChain` |
+| **ChatMessageHistory** | Track conversation history with the `ChatMessageHistory` object |
+| **ConversationBufferMemory** | Maintain full conversation history in memory |
+| **ConversationBufferWindowMemory** | Keep only the most recent N exchanges in memory |
+| **ConversationSummaryMemory** | Condense long conversation histories into summaries using an LLM |
+| **Agent Basics** | Understand how LangChain agents reason and decide which tools to use |
+| **Agent Tools** | Equip agents with tools (search, calculators, APIs) for real-world task solving |
 
 ---
 
@@ -91,7 +125,15 @@ jupyter notebook
 
 ---
 
-## 🧠 About
+## 🧠 Learning Path
+
+The three notebooks follow a structured progression:
+
+```
+Part I  →  LLM Fundamentals, Prompt Engineering, Output Parsers
+Part II →  RAG Pipeline, Vector Stores, Document Loaders, Chains
+Part III → Function Calling, Conversation Memory, Agents & Tools
+```
 
 These notebooks are from my bootcamp study of the LangChain and LangGraph ecosystem, completed alongside the **Persistent Systems Mentorship Programme**.
 
