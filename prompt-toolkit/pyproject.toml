@@ -1,0 +1,7 @@
+[project]
+name = "prompt-toolkit-lite"
+version = "0.2.0"
+requires-python = ">=3.9"
+
+[project.scripts]
+ptk = "prompt_toolkit_lite.cli:main"
